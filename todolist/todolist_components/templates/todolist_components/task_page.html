@@ -7,13 +7,11 @@
     <button type="submit">Log Out</button>
 </form>
 
-<ul>
-    <li>test</li>
-    <li>test</li>
-    <li>test</li>
-    <li>test</li>
-    <li>test</li>
-</ul>
+<form method="POST" action='{% url "add_task"  %}'>
+    {% csrf_token %}
+    <input type="text" name="task" placeholder="Enter your task">
+    <button type="submit">Add</button>
+</form>
 
 
 </html>

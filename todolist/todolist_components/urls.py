@@ -29,7 +29,10 @@ router.register('users', UserViewset)
 urlpatterns = [
     path('welcomePage', welcomePage, name="welcomePage"),
     path('authenticate_user', authenticate_user, name="authenticate"),
-    path('logout', logout_link, name="logout")
+    path('logout', logout_link, name="logout"),
+    path('register', register_link, name='register'),
+    path('add_task', add_task, name='add_task'),
+    path('task_page', task_page, name='task_page')
     
     
 ]+router.urls
